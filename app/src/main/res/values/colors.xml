@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--Özel Renkler/Kayit Ol Activity-->
+    <color name="KayitOlTextColor">#000000</color>
+    <color name="EditTextBoxColor">#00379D</color>
+
+    <color name="bottomViewSecilenRenk">#00379D</color>
+    <color name="bottomViewSecilmeyenRenk">#949393</color>
+
+    <color name="mesajGonderCerceveRenk">#26A69A</color>
+
+    <color name="chatbgLeftColor">#A29E9E</color>
+    <color name="chatbgRightColor">#5D5D5D</color>
+    <color name="chatBgTextColor">#FFFFFF</color>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.ProfilFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Hesabım"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="156dp"
+            android:id="@+id/profil_fragment_imgUserProfil"
+            android:layout_height="156dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#000000"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/profil_fragment_imgResmiSifirla"
+            android:layout_marginBottom="4dp"
+            android:layout_alignLeft="@+id/profil_fragment_imgUserProfil"
+            android:layout_alignBottom="@+id/profil_fragment_imgUserProfil"
+            android:src="@drawable/ic_sifirla"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="4dp"
+            android:id="@+id/profil_fragment_imgYeniResim"
+            android:layout_marginBottom="4dp"
+            android:layout_alignRight="@+id/profil_fragment_imgUserProfil"
+            android:layout_alignBottom="@+id/profil_fragment_imgUserProfil"
+            android:src="@drawable/ic_camera"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/profil_fragment_editIsim"
+        android:background="@drawable/profil_edit_bg"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:enabled="false"
+        android:textColor="#000000"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/profil_fragment_editEmail"
+        android:background="@drawable/profil_edit_bg"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:enabled="false"
+        android:textColor="#000000"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

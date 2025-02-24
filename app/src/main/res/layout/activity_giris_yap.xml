@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/deus"
+    tools:context=".Activity.GirisYapActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:id="@+id/giris_yap_linear"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:layout_gravity="center"
+            android:text="GİRİŞ YAP"
+            android:textColor="@color/black"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:id="@+id/giris_yap_inputEmail"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:counterTextColor="@color/EditTextBoxColor"
+
+            app:boxStrokeColor="@color/EditTextBoxColor"
+            app:cursorColor="@color/EditTextBoxColor"
+            app:hintTextColor="@color/EditTextBoxColor">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mail Adresinizi Giriniz"
+                android:id="@+id/giris_yap_editEmail"
+                android:background="@color/white"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:textColor="@color/KayitOlTextColor"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/giris_yap_inputSifre"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:counterTextColor="@color/EditTextBoxColor"
+
+            app:boxStrokeColor="@color/EditTextBoxColor"
+            app:cursorColor="@color/EditTextBoxColor"
+            app:hintTextColor="@color/EditTextBoxColor">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Şifrenizi Giriniz"
+                android:id="@+id/giris_yap_editSifre"
+                android:background="@color/white"
+                android:inputType="textPassword"
+                android:maxLength="40"
+                android:textColor="@color/KayitOlTextColor"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/EditTextBoxColor"
+            android:onClick="btnGirisYap"
+            android:text="Giriş Yap"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/giris_yap_kayit_ol_bg"
+        android:onClick="btnGitKayitOl"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+
+            android:layout_centerInParent="true"
+            android:text="Kayıt Ol"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>
